@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/question_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_question_wenda_title"
+                style="@style/question_title_css"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_wenda_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_selector"
+                android:layout_marginTop="20dp"
+                android:layout_weight="6"
+                android:text="点击回答" />
+
+            <!--<pl.droidsonroids.gif.GifImageView-->
+                <!--android:id="@+id/btn_wenda_answer"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dip"-->
+                <!--android:background="#ffffff"-->
+                <!--android:src="@mipmap/yuyin_loading"-->
+                <!--/>-->
+
+
+            <TextView
+                style="@style/question_title_css"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="你的答案：" />
+
+            <TextView
+                android:id="@+id/tv_yuyin_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
